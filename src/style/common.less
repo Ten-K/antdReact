@@ -1,0 +1,26 @@
+@import './default.less';
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    .nav-left{
+        min-width: 180px;
+        background-color:#001529;
+        color: #ffffff;
+        height: calc(100vh);
+    }
+    .main{
+        flex: 1;
+        min-width: 1000px;
+        min-height: 620px;
+        height: calc(100vh);
+        background-color: @colorL;
+        overflow: auto;
+    }
+    .content{
+        position: relative;
+        padding: 20px;
+    }
+}

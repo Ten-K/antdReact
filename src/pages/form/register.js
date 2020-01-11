@@ -79,7 +79,7 @@ class FormRegister extends React.Component{
                         </FormItem>
                         <FormItem label="密码" {...formItemLayout}>
                             {
-                                getFieldDecorator('userPwd', {
+                                getFieldDecorator('current-password', {
                                     rules: [
                                         {
                                             required: true,
@@ -87,7 +87,7 @@ class FormRegister extends React.Component{
                                         }
                                     ]
                                 })(
-                                    <Input type="password" placeholder="请输入密码" />
+                                    <Input type="current-password" placeholder="请输入密码" />
                                 )
                             }
                         </FormItem>
